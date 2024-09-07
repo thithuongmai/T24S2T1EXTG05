@@ -21,6 +21,17 @@
 		<Setter Property="IsTabStop" Value="False" />
 	</Style>
 
+	<!-- MenuButtonStyle -->
+	<Style x:Key="MenuButtonStyle" TargetType="Button">
+		<Setter Property="FontFamily" Value="Arial" />
+		<Setter Property="FontSize" Value="18" />
+		<Setter Property="HorizontalAlignment" Value="Stretch" />
+		<Setter Property="VerticalAlignment" Value="Stretch" />
+		<Setter Property="IsTabStop" Value="False" />
+		<Setter Property="Background" Value="SandyBrown" />
+		<Setter Property="Foreground" Value="Black" />
+	</Style>
+
 	<!-- ButtonBlueStyle -->
 	<Style x:Key="ButtonBlueStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
 		<Setter Property="Background" Value="LightYellow" />
@@ -43,4 +54,5 @@
 		<Setter Property="FontFamily" Value="Arial" />
 		<Setter Property="FontSize" Value="14" />
 	</Style>
+
 </ResourceDictionary>
