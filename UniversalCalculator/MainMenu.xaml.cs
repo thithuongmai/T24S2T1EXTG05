@@ -1,4 +1,5 @@
-﻿using Windows.ApplicationModel.Core;
+﻿using System;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
@@ -40,8 +41,25 @@ namespace Calculator
 		private void MathsCalculator_Click(object sender, RoutedEventArgs e)
 		{
 		}
-		private void MortgageCalculator_Click(object sender, RoutedEventArgs e)
+		private async void MortgageCalculator_Click(object sender, RoutedEventArgs e)
 		{
+			var newView = CoreApplication.CreateNewView();
+
+			// Run the code to display the MortgageCalculator page in the new view
+			await newView.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, async () =>
+			{
+				// Create a new Frame and navigate to the MortgageCalculator page
+				var newFrame = new Frame();
+				newFrame.Navigate(typeof(MortgageCalculator));
+
+				// Set the new frame's content as the window content
+				Window.Current.Content = newFrame;
+				Window.Current.Activate();
+
+				// Try to show the window and move it to the foreground
+				var newAppView = ApplicationView.GetForCurrentView();
+				await ApplicationViewSwitcher.TryShowAsStandaloneAsync(newAppView.Id);
+			});
 		}
 		private void CurrencyConverter_Click(object sender, RoutedEventArgs e)
 		{

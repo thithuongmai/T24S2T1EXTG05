@@ -1,0 +1,64 @@
+﻿<Page x:Class="Calculator.MortgageCalculator"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="LightYellow">
+
+	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Spacing="20">
+
+		<!-- Title -->
+		<TextBlock Text="Mortgage Calculator" 
+                   FontSize="24" 
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Foreground="Blue" />
+
+		<!-- Principal borrow $ -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+			<TextBlock Text="Principal borrow $:" VerticalAlignment="Center" Width="150" Foreground="Black"/>
+			<TextBox x:Name="PrincipalTextBox" Width="200" Height="30" />
+		</StackPanel>
+
+		<!-- Years -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+			<TextBlock Text="Years:" VerticalAlignment="Center" Width="150" Foreground="Black"/>
+			<TextBox x:Name="YearsTextBox" Width="200" Height="30" />
+		</StackPanel>
+
+		<!-- Months -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+			<TextBlock Text="and Months:" VerticalAlignment="Center" Width="150" Foreground="Black"/>
+			<TextBox x:Name="MonthsTextBox" Width="200" Height="30" />
+		</StackPanel>
+
+		<!-- Yearly Interest Rate -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+			<TextBlock Text="Yearly Interest Rate %:" VerticalAlignment="Center" Width="150" Foreground="Black"/>
+			<TextBox x:Name="YearlyInterestRateTextBox" Width="200" Height="30" />
+		</StackPanel>
+
+		<!-- Monthly Interest Rate -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+			<TextBlock Text="Monthly Interest Rate %:" VerticalAlignment="Center" Width="150" Foreground="Black"/>
+			<TextBox x:Name="MonthlyInterestRateTextBox" Width="200" Height="30" IsReadOnly="True" />
+		</StackPanel>
+
+		<!-- Monthly Repayment -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+			<TextBlock Text="Monthly Repayment $:" VerticalAlignment="Center" Width="150" Foreground="Black"/>
+			<TextBox x:Name="MonthlyRepaymentTextBox" Width="200" Height="30" IsReadOnly="True" />
+		</StackPanel>
+
+		<!-- Buttons -->
+
+		<Button Content="Calculate" 
+                Width="200" Height="40" 
+                Click="CalculateButton_Click"
+                Background="LightBlue" />
+
+		<Button Content="Exit" 
+                Width="200" Height="40"
+                Click="ExitButton_Click"
+                Background="LightBlue" />
+
+	</StackPanel>
+</Page>
