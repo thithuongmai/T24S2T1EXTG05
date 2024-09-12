@@ -40,6 +40,8 @@ namespace Calculator
 
 		private void MathsCalculator_Click(object sender, RoutedEventArgs e)
 		{
+			// Navigate to the Maths
+			Frame.Navigate(typeof(MainPage));
 		}
 		private async void MortgageCalculator_Click(object sender, RoutedEventArgs e)
 		{
