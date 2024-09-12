@@ -29,7 +29,7 @@
 		<!-- TODO -->
 		<TextBlock x:FieldModifier="public" x:Name="secondaryDisplay" Style="{StaticResource SmallTextBlockStyle}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
 
-		<TextBlock x:FieldModifier="public" x:Name="primaryDisplay" Style="{StaticResource BigTextBlockStyle}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+		<TextBlock x:FieldModifier="public" x:Name="primaryDisplay" Style="{StaticResource BigTextBlockStyle}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" SelectionChanged="primaryDisplay_SelectionChanged">
 				<FlyoutBase.AttachedFlyout>
 					<Flyout FlyoutPresenterStyle="{StaticResource FlyoutStyle}">
 						<TextBlock x:FieldModifier="public" x:Name="errorDisplay" Style="{StaticResource FlyoutTextBlockStyle}" />

@@ -45,6 +45,8 @@ namespace Calculator
 		}
 		private void CurrencyConverter_Click(object sender, RoutedEventArgs e)
 		{
+			// Navigate to the Currency Converter page
+			Frame.Navigate(typeof(currencyConverter));
 		}
 
 		private void Exit_Click(object sender, RoutedEventArgs e)
