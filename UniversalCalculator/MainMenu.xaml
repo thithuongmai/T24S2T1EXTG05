@@ -46,6 +46,7 @@
 		<Button Content="Maths Calculator" Width="200" Height="40" Style="{StaticResource MenuButtonStyle}" Click="MathsCalculator_Click"/>
 		<Button Content="Mortgage Calculator" Width="200" Height="40" Style="{StaticResource MenuButtonStyle}" Click="MortgageCalculator_Click"/>
 		<Button Content="Currency Converter" Width="200" Height="40" Style="{StaticResource MenuButtonStyle}" Click="CurrencyConverter_Click"/>
+		<Button x:Name="tripCalculator" Content="Trip Calculator" Width="200" Height="40" Style="{StaticResource MenuButtonStyle}" Click="tripCalculator_Click"/>
 		<Button Content="Exit" Width="200" Height="40" Style="{StaticResource MenuButtonStyle}" Click="Exit_Click"/>
 
 	</StackPanel>
