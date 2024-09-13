@@ -68,9 +68,23 @@ namespace Calculator
 			// Navigate to the Currency Converter page
 			Frame.Navigate(typeof(currencyConverter));
 		}
+		
 
 		private void Exit_Click(object sender, RoutedEventArgs e)
 		{
+			Application.Current.Exit();
 		}
+
+		private async void tripCalculator_Click(object sender, RoutedEventArgs e)
+		{
+			ContentDialog noTripCalculatorDialog = new ContentDialog
+			{
+				Content = "Trip Calculator C# code will be developed later",
+				CloseButtonText = "Ok"
+			};
+
+			await noTripCalculatorDialog.ShowAsync();
+		}
+
 	}
 }
